@@ -1,0 +1,2 @@
+rootProject.name = "Advinhe o Numero"
+include ':app'
