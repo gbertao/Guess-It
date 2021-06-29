@@ -19,17 +19,16 @@
         app:layout_constraintEnd_toStartOf="@id/textInputLayout2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499">
+        app:layout_constraintVertical_bias="0.3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Input1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:inputType="number"
             android:maxLength="1"
-            android:textSize="50dp"
-            android:gravity="center"
-            />
+            android:textSize="50dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -42,17 +41,17 @@
         app:layout_constraintEnd_toStartOf="@+id/textInputLayout3"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textInputLayout"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Input2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:inputType="number"
             android:maxLength="1"
-            android:textSize="50dp"
-            android:gravity="center"
-            />
+            android:textSize="50dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -69,38 +68,52 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Input3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:inputType="number"
             android:maxLength="1"
-            android:textSize="50dp"
-            android:gravity="center"
-            />
+            android:textSize="50dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvRNG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/btnApostar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvWinLose" />
 
     <Button
         android:id="@+id/btnApostar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:text="Apostar"
-        app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRNG" />
+
+    <TextView
+        android:id="@+id/tvWinLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/tvRNG"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="179dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         random = this.r.nextInt(1000);
         strRandom = String.format("%03d", random);
-        TextView myAwesomeTextView = (TextView)findViewById(R.id.textView);
+        TextView tvRNG = (TextView)findViewById(R.id.tvRNG);
 
-        myAwesomeTextView.setText(strRandom);
+        tvRNG.setText(strRandom);
 
         TextView tvNum = (TextView)findViewById(R.id.Input1);
         strGuessed = tvNum.getText().toString();
@@ -54,9 +54,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         strGuessed = String.format("%03d", guessed);
 
+        TextView tvWinLose = (TextView)findViewById(R.id.tvWinLose);
         if (strGuessed.equals(strRandom))
-            myAwesomeTextView.setText("Acertou");
+            tvWinLose.setText("Acertou");
         else
-            myAwesomeTextView.setText("Errou");
+            tvWinLose.setText("Errou");
     }
 }
