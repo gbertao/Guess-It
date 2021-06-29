@@ -22,6 +22,7 @@
         app:layout_constraintVertical_bias="0.499">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Input1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="number"
@@ -44,6 +45,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Input2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="number"
@@ -70,6 +72,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Input3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="number"
